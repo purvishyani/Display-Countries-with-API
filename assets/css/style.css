@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(248 248 248);
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+.header {
+    box-shadow: 0px 0px 5px 1px #e4e4e4;
+    background-color: white;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.reading-mode button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+.dark-mode-input {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+/* CONTENT */
+.hidden-content{
+    display: none;
+}
+.content {
+    padding: 2rem;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.input-country {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.input-country input {
+    font-size: 0.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 3rem;
+    width: 70%;
+    outline: none;
+}
+
+.magnify {
+    position: relative;
+    z-index: 99;
+    top: 2px;
+    left: 34px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-border-color: none;
+    font-size: 0.8rem;
+}
+
+.btn-filter {
+    /* background: white; */
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btn-filter span {
+    margin-right: 1rem;
+}
+
+.flag img {
+    width: 100%;
+    max-height: 8.5rem;
+    border-top-left-radius: 0.5rem;
+    ;
+    border-top-right-radius: 0.5rem;
+
+}
+
+.countries {
+    margin: 3rem 0;
+}
+
+.country {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px 1px #e4e4e4;
+    margin: 2rem 0;
+}
+
+.country-details {
+    padding: 2rem 1.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.country-title {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.country-info span {
+    margin: 0.1rem;
+}
+
+.select-country {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* COUNTRY PAGE */
+.country-flag img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.country-name {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.detail-title {
+    font-weight: bold;
+}
+
+.information {
+    display: flex;
+}
+
+.country-flag {
+    width: 50%;
+    margin-right: 2rem;
+    border-radius: 1rem;
+}
+
+.country-information {
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+.btn-back button {
+    border: none;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+}
+.info-content{
+    margin:1rem 0;
+}
+
+/* --------------- PAGINATION ----------------------- */
+.pagination {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.pagination ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #fff; */
+    padding: 8px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pagination ul li {
+    color: #20B2AA;
+    list-style: none;
+    line-height: 37px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.pagination ul li.numb {
+    list-style: none;
+    height: 37px;
+    width: 37px;
+    margin: 0 3px;
+    line-height: 37px;
+    border-radius: 14%;
+}
+
+.pagination ul li.numb.first {
+    margin: 0px 3px 0 -5px;
+}
+
+.pagination ul li.numb.last {
+    margin: 0px -5px 0 3px;
+}
+
+.pagination ul li.dots {
+    font-size: 22px;
+    cursor: default;
+}
+
+.pagination ul li.btn {
+    padding: 0 20px;
+    border-radius: 0.5rem;
+}
+
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+    color: #fff;
+    background: #20B2AA;
+}
